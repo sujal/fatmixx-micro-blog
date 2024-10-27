@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+	<meta name="generator" content="Hugo 0.91.2" />
+
+  <title>
+      
+      fatmixx
+      
+  </title>
+
+</head>
+
+
+  <body>
+
+    
+
+	
+<div class="h-feed">
+
+	
+	
+	  <div class="h-entry">
+		
+			<h1><a href="https://sujal.micro.blog/2024/10/27/new-hosting-for.html">New hosting for Fatmixx</a></h1>
+		
+
+		<a href="https://sujal.micro.blog/2024/10/27/new-hosting-for.html" class="u-url"><time class="dt-published" datetime="2024-10-27 13:12:45 -0400">Oct 27, 2024</time></a>
+
+		<div class="e-content">
+			 <p>Fatmixx has moved from <a href="https://pair.com">Pair.com</a> to <a href="https://micro.blog">micro.blog</a> for hosting. This also means we&rsquo;re no longer using Wordpress and are now hosted on <a href="https://gohugo.io">Hugo</a>. Old URLs should redirect to the new ones, images should be working if they worked on the old host. If you see anything weird, let me know.</p>
+<p>If you want more technical details on why the change, I wrote more about this on <a href="https://www.usefulclever.com">UsefulClever</a>.</p>
+<p>BTW - this had nothing to do with <a href="https://www.theverge.com/2024/9/27/24256361/wordpress-wp-engine-drama-explained-matt-mullenweg">the recent Wordpress controversy</a>, I&rsquo;ve wanted to do this just for efficiency &amp; security &amp; cost for months. The controversy did bring it top of mind though.</p>
+
+		</div>
+	  </div>
+	
+	  <div class="h-entry">
+		
+			<h1><a href="https://sujal.micro.blog/2022/03/04/monday-links-moving.html">Monday links moving to another site</a></h1>
+		
+
+		<a href="https://sujal.micro.blog/2022/03/04/monday-links-moving.html" class="u-url"><time class="dt-published" datetime="2022-03-04 14:43:33 -0400">Mar 4, 2022</time></a>
+
+		<div class="e-content">
+			 <!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+
+		</div>
+	  </div>
+	
+	  <div class="h-entry">
+		
+			<h1><a href="https://sujal.micro.blog/2018/08/01/time-should-fade.html">Time Should Fade (Almost) Everything...</a></h1>
+		
+
+		<a href="https://sujal.micro.blog/2018/08/01/time-should-fade.html" class="u-url"><time class="dt-published" datetime="2018-08-01 22:07:10 -0400">Aug 1, 2018</time></a>
+
+		<div class="e-content">
+			 <p><!-- raw HTML omitted -->Update:<!-- raw HTML omitted --> There aren&rsquo;t APIs for most of the services that I&rsquo;d want to use here, so I&rsquo;m putting this project on pause for now. I&rsquo;ll probably hack something together for my own use, but trying to turn this into a service doesn&rsquo;t seem possible given API usage guidelines from these services.</p>
+<!-- raw HTML omitted -->
+<p>I posted the following to Twitter the other day:</p>
+<!-- raw HTML omitted -->
+<p>I used to believe that everything posted on the Internet should stay, forever. I’m not so sure that is true. Published for public consumption, forever? Beginning to doubt that for most normal humans…</p>
+<p>In the near future (weeks hopefully), I’m going to start automatically hiding old photos, blog posts, everything except those that seem really worthwhile to keep up indefinitely. I’m working on the rules still, curious what people think are good rules.</p>
+<p>I’m almost certain that corporate social media policies, especially for public facing employees, should strongly recommend services that do the same - either delete or tighten up permissions after a window of time on public posts (And anything on FB)…<!-- raw HTML omitted -->
+So, in short - you&rsquo;re only going to see ~7 days of old tweets on my Twitter account. This post is about how I&rsquo;m setting that up.</p>
+<!-- raw HTML omitted -->
+<p>I found a small script someone wrote on Github, forked it, and then modified it quite significantly. The script and instructions are <!-- raw HTML omitted -->on my Github account<!-- raw HTML omitted -->. You’ll need to be comfortable at the command line if you want to use it. It’s rough, and I offer no guarantees that it will run smoothly for you. Also, keep in mind - it will delete <!-- raw HTML omitted -->all<!-- raw HTML omitted --> of your tweets, and <!-- raw HTML omitted -->there is no undo<!-- raw HTML omitted -->. Keep your backup archive safe, and make sure this is what you want: delete <!-- raw HTML omitted -->everything<!-- raw HTML omitted -->.</p>
+<p>To get around the 3200 tweet API issue mentioned above, the script uses the <!-- raw HTML omitted -->tweets.js<!-- raw HTML omitted --> file that comes in the data backup from Twitter, so the good thing is that you’re basically forced to download the backup to use the utility. That file contains the IDs for all of your tweets (among other things), which is all we need to issue the delete command for that tweet.</p>
+<!-- raw HTML omitted -->
+<p>The bot runs every few hours, looks for tweets in my account older than the interval I’ve configured, currently set at 7 days, and deletes them if it finds anything. It’s all pretty simple.</p>
+<!-- raw HTML omitted -->
+<p>I mentioned this to a few folks, and got a few enthusiastic “I want that for my account!” comments. So, I’m going to spin this up as a side project and see what I can cobble together. If you take a look at the code I linked to above, it’s very simplistic - fine for a single account, but not the best for a real service.</p>
+<p>The other aspect of this I’m working on is governance. I don’t want to do this as a business - that’s not a goal. What I do want is a service that has a strong privacy stance, that offers high trust to folks that use it. One of the reasons I didn’t use the public services that are out there is that their business model is unclear.[footnote]I do think the popular ones, like <!-- raw HTML omitted -->TweetDelete<!-- raw HTML omitted -->, seem like fine options. That one, for example, is owned by a hosting company that doesn’t seem to need the revenue from a tweet deletion service.[/footnote]</p>
+<p>I am hoping to use this as an experiment in a cooperative form of governance for an online service, one where any charges are transparently used to maintain the service, where the source code is available for people to review, and where users can have some sort of assurance that the code that is released is the code that the hosted service is actually running. These seem like interesting problems regardless of the service being offered.</p>
+<p>Because naming things is easily the most important and most fun part of any project (seriously, I have so many domain names!), I’ve decided to call this the <!-- raw HTML omitted -->Time Fades Project<!-- raw HTML omitted -->. A placeholder page is all that’s over there, but stay tuned for more.</p>
+<p>If you have any interest in this sort of governance topic, or in contributing to the service, or in what a good set of default rules are for these sorts of ephemeral behaviors (I expect this will need to be different for different social networks), please get in touch.</p>
+
+		</div>
+	  </div>
+	
+	  <div class="h-entry">
+		
+			<h1><a href="https://sujal.micro.blog/2018/03/25/i-deactivated-my.html">I Deactivated My Facebook Profile</a></h1>
+		
+
+		<a href="https://sujal.micro.blog/2018/03/25/i-deactivated-my.html" class="u-url"><time class="dt-published" datetime="2018-03-25 23:15:48 -0400">Mar 25, 2018</time></a>
+
+		<div class="e-content">
+			 <!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+
+		</div>
+	  </div>
+	
+	  <div class="h-entry">
+		
+			<h1><a href="https://sujal.micro.blog/2017/06/26/e-pluribus-unum.html">E Pluribus Unum</a></h1>
+		
+
+		<a href="https://sujal.micro.blog/2017/06/26/e-pluribus-unum.html" class="u-url"><time class="dt-published" datetime="2017-06-26 12:51:00 -0400">Jun 26, 2017</time></a>
+
+		<div class="e-content">
+			 <!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+
+		</div>
+	  </div>
+	
+	  <div class="h-entry">
+		
+			<h1><a href="https://sujal.micro.blog/2016/11/11/we-hold-these.html">We hold these truths to be self-evident...</a></h1>
+		
+
+		<a href="https://sujal.micro.blog/2016/11/11/we-hold-these.html" class="u-url"><time class="dt-published" datetime="2016-11-11 02:30:39 -0400">Nov 11, 2016</time></a>
+
+		<div class="e-content">
+			 <!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+
+		</div>
+	  </div>
+	
+	  <div class="h-entry">
+		
+			<h1><a href="https://sujal.micro.blog/2016/02/25/from-humble-beginnings.html">From Humble Beginnings: the NFL vs. eSports</a></h1>
+		
+
+		<a href="https://sujal.micro.blog/2016/02/25/from-humble-beginnings.html" class="u-url"><time class="dt-published" datetime="2016-02-25 04:05:01 -0400">Feb 25, 2016</time></a>
+
+		<div class="e-content">
+			 <!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<p>All of that combined makes being a professional “League of Legends” player a viable career opportunity. This helps the game reach its full potential, because we want to avoid our pro players coming under financial stress and having to hold down part-time jobs. We want to make it so being a pro player is a completely viable career opportunity.</p>
+<p><!-- raw HTML omitted --><!-- raw HTML omitted -->Riot Games' CEO, Brandon Beck<!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+
+		</div>
+	  </div>
+	
+	  <div class="h-entry">
+		
+			<h1><a href="https://sujal.micro.blog/2015/10/20/one-year-later.html">One year later with the Twelve South SurfacePad</a></h1>
+		
+
+		<a href="https://sujal.micro.blog/2015/10/20/one-year-later.html" class="u-url"><time class="dt-published" datetime="2015-10-20 11:34:46 -0400">Oct 20, 2015</time></a>
+
+		<div class="e-content">
+			 <!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+
+		</div>
+	  </div>
+	
+	  <div class="h-entry">
+		
+			<h1><a href="https://sujal.micro.blog/2015/07/09/goodbye-google-apps.html">Goodbye Google Apps (GMail), Hello Fastmail (and MailRoute)</a></h1>
+		
+
+		<a href="https://sujal.micro.blog/2015/07/09/goodbye-google-apps.html" class="u-url"><time class="dt-published" datetime="2015-07-09 14:46:51 -0400">Jul 9, 2015</time></a>
+
+		<div class="e-content">
+			 <!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+
+		</div>
+	  </div>
+	
+	  <div class="h-entry">
+		
+			<h1><a href="https://sujal.micro.blog/2015/04/21/moov-fitness-coaching.html">Moov: Fitness coaching, not just tracking</a></h1>
+		
+
+		<a href="https://sujal.micro.blog/2015/04/21/moov-fitness-coaching.html" class="u-url"><time class="dt-published" datetime="2015-04-21 11:48:32 -0400">Apr 21, 2015</time></a>
+
+		<div class="e-content">
+			 <!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+
+		</div>
+	  </div>
+	
+
+</div>
+
+
+    
+    
+
+  </body>
+
+</html>
